@@ -1,7 +1,11 @@
+<h1>Restaurant Finder</h1>
+<h5>By Philip Lam</h5>
 <div>
+  <label>Please enter a location:</label>
   <input [(ngModel)]="city" type="text">
   <button (click)="getData();" type="button">Get Restaurants</button>
 </div>
+<h5>{{state}}</h5>
 
 <ul style="list-style-type: none;">
   <li *ngFor="let restaurant of restaurants">
