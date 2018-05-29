@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'app';
+  state = false;
+
+  toggleViews(){
+    this.state = !this.state;
+  }
+
 }

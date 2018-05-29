@@ -1,7 +1,6 @@
 <div>
-  <a href="../assets/AnswersToTechnicalQuestions.md">Answers To Technical Questions</a>
-
-  
-
-  <app-display></app-display>
+  <button (click)="toggleViews()">Application</button>
+  <button (click)="toggleViews()">Answers To Questions</button>
 </div>
+<app-display [hidden]="state"></app-display>
+<app-questions [hidden]="!state"></app-questions>
