@@ -1,0 +1,13 @@
+<div>
+  <input [(ngModel)]="city" type="text">
+  <button (click)="getData();" type="button">Get Restaurants</button>
+</div>
+
+<ul style="list-style-type: none;">
+  <li *ngFor="let restaurant of restaurants">
+    -----------------------------------------------<br>
+    Name: {{restaurant.name}}<br>
+    Address: {{restaurant.address}}<br>
+    Price: {{restaurant.price}}<br>
+  </li>
+</ul>
